@@ -1,0 +1,17 @@
+{
+  "Avatar": {
+    "description": "Auto imported from components/Avatar.vue"
+  },
+  "Breadcrumb": {
+    "description": "Auto imported from components/Breadcrumb.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  }
+}
