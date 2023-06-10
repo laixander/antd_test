@@ -1,8 +1,8 @@
-export { default as Avatar } from '../../components/Avatar.vue'
-export { default as Breadcrumb } from '../../components/Breadcrumb.vue'
-export { default as Logo } from '../../components/Logo.vue'
-export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
-export { default as Tutorial } from '../../components/Tutorial.vue'
+export { default as Avatar } from '../..\\components\\Avatar.vue'
+export { default as Breadcrumb } from '../..\\components\\Breadcrumb.vue'
+export { default as Logo } from '../..\\components\\Logo.vue'
+export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
+export { default as Tutorial } from '../..\\components\\Tutorial.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

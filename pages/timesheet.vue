@@ -2,17 +2,17 @@
     <div :style="{ width: '100%', maxWidth: '1192px', margin: '0  auto', display: 'flex', flexDirection: 'column', gap: '16px' }">
         <a-row type="flex" justify="space-between" :gutter="[16,16]">
             <a-col :xs="24">
-                <a-row :style="{ height: '100%', borderRadius: '6px', overflow: 'hidden', border: '1px solid #e8e8e8', boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.05)' }">
-                    <a-col span="6" :style="{ background: '#FFF', height: '100%', padding: '24px' }">
+                <a-row :style="{ backgroundColor: '#fff', borderRadius: '6px', overflow: 'hidden', border: '1px solid #e8e8e8', boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.05)' }">
+                    <a-col :xl="6" :style="{ background: '#FFF', height: '100%', padding: '24px' }">
                         <div :style="{display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '16px'}">
                             <span class="emphasis">{{currentTime}}</span>
                             <span>{{currentDate}}</span>
                         </div>
                         <a-button block>Time In</a-button>
                     </a-col>
-                    <a-col span="18" :style="{ background: '#F8F9FA', height: '100%', padding: '24px' }">
+                    <a-col :xl="18" :style="{ background: '#F8F9FA', height: '100%', padding: '24px' }">
                         <a-row type="flex" :gutter="[16,16]">
-                            <a-col :lg="6">
+                            <a-col :xs="24" :md="12" :lg="6">
                                 <a-card>
                                     <div :style="{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }">
                                         <span class="emphasis">0</span>
@@ -20,7 +20,7 @@
                                     </div>
                                 </a-card>
                             </a-col>
-                            <a-col :lg="6">
+                            <a-col :xs="24" :md="12" :lg="6">
                                 <a-card>
                                     <div :style="{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }">
                                         <span class="emphasis">0</span>
@@ -28,7 +28,7 @@
                                     </div>
                                 </a-card>
                             </a-col>
-                            <a-col :lg="6">
+                            <a-col :xs="24" :md="12" :lg="6">
                                 <a-card>
                                     <div :style="{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }">
                                         <span class="emphasis">0</span>
@@ -36,7 +36,7 @@
                                     </div>
                                 </a-card>
                             </a-col>
-                            <a-col :lg="6">
+                            <a-col :xs="24" :md="12" :lg="6">
                                 <a-card>
                                     <div :style="{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }">
                                         <span class="emphasis">0</span>
@@ -51,73 +51,79 @@
         </a-row>
         <a-card title="Daily Time Record">
             <span slot="extra">
-                <a-select
-                    show-search
-                    placeholder="Select Month"
-                    option-filter-prop="month"
-                    style="width: 200px"
-                    :filter-option="filterOption"
-                    @focus="handleFocus"
-                    @blur="handleBlur"
-                    @change="handleChange"
-                >
-                    <a-select-option value="january">
-                    January
-                    </a-select-option>
-                    <a-select-option value="february">
-                    February
-                    </a-select-option>
-                    <a-select-option value="march">
-                    March
-                    </a-select-option>
-                </a-select>
-
-                <a-select
-                    show-search
-                    placeholder="Select Year"
-                    option-filter-prop="year"
-                    style="width: 200px"
-                    :filter-option="filterOption"
-                    @focus="handleFocus"
-                    @blur="handleBlur"
-                    @change="handleChange"
-                >
-                    <a-select-option value="2023">
-                    2023
-                    </a-select-option>
-                    <a-select-option value="2022">
-                    2022
-                    </a-select-option>
-                    <a-select-option value="2021">
-                    2021
-                    </a-select-option>
-                </a-select>
-
-                <a-dropdown placement="bottomRight">
-                    <a-menu slot="overlay" @click="handleMenuClick">
-                        <a-menu-item key="1"> <a-icon type="file" />All </a-menu-item>
-                        <a-menu-item key="2"> <a-icon type="file" />DTR </a-menu-item>
-                        <a-menu-item key="3"> <a-icon type="file" />Accomplishment Report </a-menu-item>
-                        <a-menu-item key="3"> <a-icon type="file" />Official Time </a-menu-item>
-                    </a-menu>
-                    <a-button :style="{ lineHeight: '2.21em' }"> Download <a-icon type="down" /> </a-button>
-                </a-dropdown>
+                <a-row type="flex" :gutter="[8,8]">
+                    <a-col>
+                        <a-select
+                            show-search
+                            placeholder="Select Month"
+                            option-filter-prop="month"
+                            style="width: 200px"
+                            :filter-option="filterOption"
+                            @focus="handleFocus"
+                            @blur="handleBlur"
+                            @change="handleChange"
+                        >
+                            <a-select-option value="january">
+                            January
+                            </a-select-option>
+                            <a-select-option value="february">
+                            February
+                            </a-select-option>
+                            <a-select-option value="march">
+                            March
+                            </a-select-option>
+                        </a-select>
+                    </a-col>
+                    <a-col>
+                        <a-select
+                            show-search
+                            placeholder="Select Year"
+                            option-filter-prop="year"
+                            style="width: 200px"
+                            :filter-option="filterOption"
+                            @focus="handleFocus"
+                            @blur="handleBlur"
+                            @change="handleChange"
+                        >
+                            <a-select-option value="2023">
+                            2023
+                            </a-select-option>
+                            <a-select-option value="2022">
+                            2022
+                            </a-select-option>
+                            <a-select-option value="2021">
+                            2021
+                            </a-select-option>
+                        </a-select>
+                    </a-col>
+                    <a-col>
+                        <a-dropdown placement="bottomRight">
+                            <a-menu slot="overlay" @click="handleMenuClick">
+                                <a-menu-item key="1"> <a-icon type="file" />All </a-menu-item>
+                                <a-menu-item key="2"> <a-icon type="file" />DTR </a-menu-item>
+                                <a-menu-item key="3"> <a-icon type="file" />Accomplishment Report </a-menu-item>
+                                <a-menu-item key="3"> <a-icon type="file" />Official Time </a-menu-item>
+                            </a-menu>
+                            <a-button :style="{ lineHeight: '2.21em' }"> Download <a-icon type="down" /> </a-button>
+                        </a-dropdown>
+                    </a-col>
+                </a-row>
             </span>
-            <a-row :gutter="[16]">
-                <a-col :xl="12">
+            <a-row>
+                <a-col :xl="24">
                     <a-table :columns="columns" :data-source="data" bordered>
                         <template slot="name" slot-scope="text">
                             <a>{{ text }}</a>
                         </template>
                     </a-table>
                 </a-col>
-                <a-col :xl="12">
+                <!-- <a-col :xl="12">
                     <a-table :columns="columns" :data-source="data" bordered>
                         <template slot="name" slot-scope="text">
                             <a>{{ text }}</a>
                         </template>
                     </a-table>
-                </a-col>
+                </a-col> -->
             </a-row>
         </a-card>
     </div>
@@ -242,6 +248,9 @@ export default {
 </script>
 
 <style>
+.ant-card-head-wrapper {
+    flex-wrap: wrap;
+}
 .ant-table-pagination.ant-pagination {
     margin-bottom: 0;
 }

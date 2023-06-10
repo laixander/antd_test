@@ -4,10 +4,10 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _f295c010 = () => interopDefault(import('../pages/leaves.vue' /* webpackChunkName: "pages/leaves" */))
-const _d02a1d06 = () => interopDefault(import('../pages/overtime.vue' /* webpackChunkName: "pages/overtime" */))
-const _49ca1306 = () => interopDefault(import('../pages/timesheet.vue' /* webpackChunkName: "pages/timesheet" */))
-const _682bb1b4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _e6bb2dc0 = () => interopDefault(import('..\\pages\\leaves.vue' /* webpackChunkName: "pages/leaves" */))
+const _50aadeb6 = () => interopDefault(import('..\\pages\\overtime.vue' /* webpackChunkName: "pages/overtime" */))
+const _01fe58de = () => interopDefault(import('..\\pages\\timesheet.vue' /* webpackChunkName: "pages/timesheet" */))
+const _67c9ce04 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -22,19 +22,19 @@ export const routerOptions = {
 
   routes: [{
     path: "/leaves",
-    component: _f295c010,
+    component: _e6bb2dc0,
     name: "leaves"
   }, {
     path: "/overtime",
-    component: _d02a1d06,
+    component: _50aadeb6,
     name: "overtime"
   }, {
     path: "/timesheet",
-    component: _49ca1306,
+    component: _01fe58de,
     name: "timesheet"
   }, {
     path: "/",
-    component: _682bb1b4,
+    component: _67c9ce04,
     name: "index"
   }],
 

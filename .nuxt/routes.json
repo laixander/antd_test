@@ -2,29 +2,25 @@
   {
     "name": "leaves",
     "path": "/leaves",
-    "component": "/Users/lnaguit/Documents/GitHub/antd_test/pages/leaves.vue",
-    "chunkName": "pages/leaves",
-    "_name": "_f295c010"
+    "component": "C:\\\\Users\\\\Laix\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\leaves.vue",
+    "chunkName": "pages/leaves"
   },
   {
     "name": "overtime",
     "path": "/overtime",
-    "component": "/Users/lnaguit/Documents/GitHub/antd_test/pages/overtime.vue",
-    "chunkName": "pages/overtime",
-    "_name": "_d02a1d06"
+    "component": "C:\\\\Users\\\\Laix\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\overtime.vue",
+    "chunkName": "pages/overtime"
   },
   {
     "name": "timesheet",
     "path": "/timesheet",
-    "component": "/Users/lnaguit/Documents/GitHub/antd_test/pages/timesheet.vue",
-    "chunkName": "pages/timesheet",
-    "_name": "_49ca1306"
+    "component": "C:\\\\Users\\\\Laix\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\timesheet.vue",
+    "chunkName": "pages/timesheet"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/lnaguit/Documents/GitHub/antd_test/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_682bb1b4"
+    "component": "C:\\\\Users\\\\Laix\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
