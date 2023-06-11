@@ -12,20 +12,10 @@
       <a-col :xs="24" :lg="12">
         <a-card>
           <a-carousel autoplay>
-            <div :style="{ textAlign: 'right' }">
-              <h3 :style="{ fontSize: '1.4rem', fontWeight: '600', marginBottom: '0' }">Academic Scholarship</h3>
-              <p :style="{ marginBottom: '0.6em' }">Apply for scholarship available for all employee</p>
-              <a-button type="link" icon="select" :style="{ padding: '0' }">Apply for Scholarship</a-button>
-            </div>
-            <div :style="{ textAlign: 'right' }">
-              <h3 :style="{ fontSize: '1.4rem', fontWeight: '600', marginBottom: '0' }">Academic Scholarship</h3>
-              <p :style="{ marginBottom: '0.6em' }">Apply for scholarship available for all employee</p>
-              <a-button type="link" icon="select" :style="{ padding: '0' }">Apply for Scholarship</a-button>
-            </div>
-            <div :style="{ textAlign: 'right' }">
-              <h3 :style="{ fontSize: '1.4rem', fontWeight: '600', marginBottom: '0' }">Academic Scholarship</h3>
-              <p :style="{ marginBottom: '0.6em' }">Apply for scholarship available for all employee</p>
-              <a-button type="link" icon="select" :style="{ padding: '0' }">Apply for Scholarship</a-button>
+            <div :style="{ textAlign: 'right' }" v-for="banner in banners">
+              <h3 :style="{ fontSize: '1.4rem', fontWeight: '600', marginBottom: '0' }">{{ banner.title }}</h3>
+              <p :style="{ marginBottom: '0.6em' }">{{ banner.content }}</p>
+              <a-button type="link" icon="select" :style="{ padding: '0' }">{{ banner.button }}</a-button>
             </div>
           </a-carousel>
         </a-card>
@@ -225,6 +215,24 @@ const notice = [
   },
 ];
 
+const banners = [
+  {
+    title: 'Academic Scholarship',
+    content: 'Apply for scholarship available for all employee',
+    button: 'Apply for Scholarship'
+  },
+  {
+    title: 'Academic Scholarship',
+    content: 'Apply for scholarship available for all employee',
+    button: 'Apply for Scholarship'
+  },
+  {
+    title: 'Academic Scholarship',
+    content: 'Apply for scholarship available for all employee',
+    button: 'Apply for Scholarship'
+  },
+];
+
 export default {
   data() {
     return {
@@ -232,7 +240,8 @@ export default {
       currentTime: null,
       currentDate: null,
       employee,
-      notice
+      notice,
+      banners
     }
   },
   beforeDestroy() {

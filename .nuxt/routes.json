@@ -2,25 +2,29 @@
   {
     "name": "leaves",
     "path": "/leaves",
-    "component": "C:\\\\Users\\\\Laix\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\leaves.vue",
-    "chunkName": "pages/leaves"
+    "component": "C:\\\\Users\\\\loren\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\leaves.vue",
+    "chunkName": "pages/leaves",
+    "_name": "_90baf97c"
   },
   {
     "name": "overtime",
     "path": "/overtime",
-    "component": "C:\\\\Users\\\\Laix\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\overtime.vue",
-    "chunkName": "pages/overtime"
+    "component": "C:\\\\Users\\\\loren\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\overtime.vue",
+    "chunkName": "pages/overtime",
+    "_name": "_430caa47"
   },
   {
     "name": "timesheet",
     "path": "/timesheet",
-    "component": "C:\\\\Users\\\\Laix\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\timesheet.vue",
-    "chunkName": "pages/timesheet"
+    "component": "C:\\\\Users\\\\loren\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\timesheet.vue",
+    "chunkName": "pages/timesheet",
+    "_name": "_02df737c"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Laix\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\loren\\\\Documents\\\\GitHub\\\\antd_test\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_65039ac8"
   }
 ]
