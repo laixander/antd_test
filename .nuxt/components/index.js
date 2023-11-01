@@ -1,8 +1,8 @@
-export { default as Avatar } from '../..\\components\\Avatar.vue'
-export { default as Breadcrumb } from '../..\\components\\Breadcrumb.vue'
-export { default as Logo } from '../..\\components\\Logo.vue'
-export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
-export { default as Tutorial } from '../..\\components\\Tutorial.vue'
+export const Avatar = () => import('../..\\components\\Avatar.vue' /* webpackChunkName: "components/avatar" */).then(c => wrapFunctional(c.default || c))
+export const Breadcrumb = () => import('../..\\components\\Breadcrumb.vue' /* webpackChunkName: "components/breadcrumb" */).then(c => wrapFunctional(c.default || c))
+export const Logo = () => import('../..\\components\\Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c))
+export const NuxtLogo = () => import('../..\\components\\NuxtLogo.vue' /* webpackChunkName: "components/nuxt-logo" */).then(c => wrapFunctional(c.default || c))
+export const Tutorial = () => import('../..\\components\\Tutorial.vue' /* webpackChunkName: "components/tutorial" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
